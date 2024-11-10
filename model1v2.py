@@ -38,7 +38,6 @@ except LookupError:
     stop_words_english = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 stop_words = stop_words_russian.union(stop_words_english)
-stop_words = stop_words_russian.union(stop_words_english)
 
 client = MongoClient('mongodb://localhost:27017/')
 db = client['ml_training_data_db']
